@@ -1,0 +1,456 @@
+body, ul {
+	margin:0;
+	padding:0;
+	min-width:782px;
+}
+
+input { margin:0 !important; }
+#DOWNCSV { display:none; }
+
+#content { width:99%;	}
+
+#content ul li {
+	list-style:none;
+	cursor:pointer;
+}
+
+table {
+	width:100%;
+}
+
+table tr.header td div {
+	cursor:pointer;
+}
+
+table tr.header td div {
+	font-weight:bold;
+	margin:0 1px 2px 1px;
+}
+
+.textAds table td {
+	width:30%;
+	padding:2px 1px 0 0;
+}
+
+.keywords table td {
+	width:15%;
+	padding:2px 1px 0 0;
+}
+
+.keywords table td.keyword {
+	width:35%;
+}
+
+table td div {
+	position:relative;
+	float:left;
+}
+
+table td input.edit[type='text'] {
+	background-color:#ececff;
+}
+
+table td input[type='text'] {
+	height:12px;
+	width:95.5%;
+	background-color:#fff;
+	text-overflow:ellipsis;
+	-webkit-text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:default;
+	box-shadow:none;
+	border:1px solid transparent;
+	border-bottom:1px dotted #ddd;
+	background-color: #fafaff;
+}
+
+.keywords table td input[type='text'] {
+	width:91.5%;
+}
+
+.keywords table td.keyword input[type='text'] {
+	width:96.5%;
+}
+
+.keywords table td.keyword div.search input[type='text'] {
+	width:90px;
+}
+
+table td.buttons {
+	max-width:48px;
+}
+
+table td.status {
+	width:8%;
+}
+
+table td.status input {
+	cursor:pointer;
+}
+
+table td div.search {
+	min-width:100px;	
+	margin:0 4px 0 4px;
+	width:140px;
+	color:black;
+	margin:0 0 0 4px;
+	font-size:0.85em;
+	padding:1px 2px 0 0;
+	float:right;
+}
+
+table td div.search div {
+	position:relative;
+	float:left;
+	padding-right:1px;
+}
+
+table td div.search input {
+	height:14px;
+	width:89px;
+	margin:-1px  1px 0 2px;
+	padding:1px 0 0 2px;
+	border:2px solid #626262;
+	background:#eef;
+	float:left;
+	position:relative;
+}
+
+table .glyph.sort { 
+	background: url('../img/glyph.png') -284px -118px no-repeat;
+	height:16px;
+	width:20px;
+	min-width:12px !important;
+	margin:0px 0 0 0;
+}
+
+table .glyph.sort.asc { 
+	background: url('../img/glyph.png') -310px -117px no-repeat;
+	height:14px;
+}
+
+table .glyph.sort.hid { 
+	background:transparent;
+}
+
+
+#items_list {
+	display:none;
+	position:relative;
+	float:left;
+	margin:12px 0 0 0;
+	border-top:1px solid #444;
+}
+
+#items_list ul,
+#items_list ul li { padding:0; margin:0; }
+
+#items_list .header { border-bottom:1px solid #444; }
+
+#items_list .pager{
+	position:relative;
+	float:left;
+	background-color:#222;
+	padding:2px 4px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	width:100%;
+	margin-top:2px;
+}
+
+#items_list .pager li {
+	background-color:#444;
+	color:#eee;
+	position:relative;
+	float:left;
+	margin:2px 1px;
+	padding:1px 3px;
+	-webkit-border-radius:4px;
+}
+
+#items_list .pager li.nav {
+	color:transparent;
+	width:20px;
+	margin:2px 3px 0 0;
+}
+
+#items_list .pager li.buttons {
+	float:right;
+	background:transparent;
+	width:50px;
+}
+
+#items_list .pager li.first.nav  { background: #444 url('../img/glyph-white.png') -210px -69px no-repeat; }
+#items_list .pager li.prev.nav   { background: #444 url('../img/glyph-white.png') -426px -69px no-repeat; }
+#items_list .pager li.middle.nav { background: #444 url('../img/glyph-white.png') -322px -69px no-repeat; }
+#items_list .pager li.next.nav   { background: #444 url('../img/glyph-white.png') -448px -69px no-repeat; }
+#items_list .pager li.last.nav   { background: #444 url('../img/glyph-white.png') -354px -69px no-repeat; }
+
+#items_list .pager li.rowCount {
+	float:right;
+	background:#444;
+	color:#eee;
+}
+
+#items_list .pager li.rowCount > div {
+	position:relative; 
+	float:left;
+	font-size:0.9em;
+}
+
+#items_list .pager li.rowCount > select {
+	width:50px;
+	height:16px;
+	margin:0px 0 1px 4px;
+	font-size:0.85em;
+}
+
+
+[item-sort] { text-decoration:underline; }
+
+.fullBox {
+	position:relative;
+	float:left;
+	clear:both;
+	min-width:100%;
+	margin-bottom:4px;
+}
+
+.fullBox.heading 			{ border-bottom:1px solid #555;	}
+.fullBox.right > div 	{ float:right; }
+.fullBox.hid					{ opacity:0; }
+
+/* NEW */
+.fullBox.listHeads ul {
+	position:relative;
+	float:left;
+	margin:0 0 12px 0;
+	padding:0;
+}
+
+.fullBox.listHeads ul li {
+	position:relative;
+	float:left;
+	font-size:1.2em;
+	padding:6px 5px;
+	border:2px solid #626262;
+	-webkit-border-radius:4px;
+	margin:0 3px 0 0;
+	background-color:#eef;
+}
+
+.fullBox.listHeads ul li.selected {
+	background:#cce;
+}
+
+.fullBox.lists > div {
+	position:relative;
+	float:left;
+	margin-right:4px;
+	height:26px;
+}
+
+.fullBox.lists .del,
+.fullBox.lists .edit,
+.fullBox.lists input,
+.fullBox.lists select {
+	float:left;
+	display:none;
+}
+
+.fullBox.lists select { margin-bottom:0; }
+
+.fullBox.lists > div#item_notify {
+	display:none;
+	float:right;
+	font-weight:bold;
+	color:green;
+	height:12px;
+	margin:16px 0 0 0;
+}
+
+.fullBox.lists > div#item_notify.fail {
+	color:red;
+}
+/* */
+
+.glyph {
+	posiiton:relative;
+	float:left;
+	color:transparent;
+	width:18px;
+	height:20px;
+	margin:5px 0 0 2px;
+	cursor:pointer;
+	background: url('../img/glyph.png') -236px -22px no-repeat; 
+}
+
+.glyph.posNeg { 
+	background: url('../img/glyph.png') -236px -22px no-repeat; 
+	margin:0 3px 0 0;
+}
+
+.glyph.check { 
+	background: url('../img/glyph.png') -286px 6px no-repeat;
+	margin:0 3px 0 0;
+}
+
+.glyph.expand { 
+	background: url('../img/glyph.png') -454px -138px no-repeat;
+	margin:0 3px 0 0;
+}
+
+.glyph.cancel { 
+	background: url('../img/glyph.png') -212px -92px no-repeat;
+	margin:0 3px 0 0;
+}
+
+.glyph.download,
+.glyph.upload,
+.glyph.add {
+	width:14px;
+	height:14px;
+	position:relative;
+	float:left;
+}
+
+.glyph.download { 
+	background: url('../img/glyph.png') -310px -95px no-repeat; 
+	margin:2px 2px 0 0px;
+}
+
+.glyph.upload { 
+	background: url('../img/glyph.png') -286px -93px no-repeat; 
+	margin:0 3px 0 0;
+	z-index:-1;
+}
+
+.glyph.add {
+  background: transparent url('../img/glyph.png') -408px -96px no-repeat;
+	font-size:0.9em;
+	margin:2px 3px 0 0;
+}
+
+form.uploadForm {
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	height:20px;
+}
+
+form.uploadForm input {
+	opacity:0;
+	z-index:20000;
+}
+
+form.uploadForm div.glyph { margin-top:-28px; }
+
+form.uploadForm div.glyph.bulk { margin-top:-26px; }
+
+.fullBox.lists form.uploadForm input { display:block; }
+.fullBox.lists form.uploadForm { width:28px; }
+
+
+.fullBox.lists > div.selEdit div {
+	posiiton:relative;
+	float:left;
+	color:transparent;
+	width:18px;
+	height:18px;
+	margin:5px 0 0 2px;
+}
+
+.fullBox.lists > div.add {
+	margin-left:0px;
+  background: url('../img/glyph.png') -404px -92px no-repeat;
+  color:transparent;
+}
+
+.fullBox.lists > div.selEdit.add,
+.fullBox.lists > div.add.write {
+	background: url('../img/glyph.png') -286px 6px no-repeat;
+}
+
+.fullBox.lists > div.selOpen.del {
+	background: url('../img/glyph.png') -452px 7px no-repeat;
+  color:transparent;
+}
+
+.fullBox.lists > div.selEdit.edit {
+	background: url('../img/glyph.png') -286px 6px no-repeat;
+  color:transparent;
+}
+
+.fullBox.lists > div.addList {
+	display:none;
+}
+
+#addCategory,
+#posNegDiv {
+	margin:4px;
+	position:relative;
+	float:left;
+	font-size:1.3em;
+}
+
+#posNegDiv { padding:6px 0 0 0; }
+
+#addCategory {
+	display:none;
+	position:relative;
+	float:left;
+	clear:both;
+}
+
+/* .editButtons BEGIN */
+btn, 
+buttons {
+	display:block;
+	width:42px;
+	height:14px;
+	margin:4px 0 0 12px;
+	padding:0;
+	position:relative;
+	float:left;
+}
+
+btn { 
+	margin:0;
+	width:20px; 
+  color:transparent;
+  cursor:pointer;
+}
+
+
+buttons btn.edit 		{ background: url('../img/glyph.png') 0px -72px no-repeat; }
+buttons btn.del  		{ background: url('../img/glyph.png') -456px 0px no-repeat; }
+buttons btn.cancel	{ background: transparent; }
+buttons btn.add			{ background: url('../img/glyph.png') -404px -96px no-repeat; }
+
+.write	buttons btn.add,		
+.write	buttons btn.edit 		{ background: url('../img/glyph.png') -288px 0px no-repeat; }
+.write	buttons btn.del, 
+.write	buttons btn.cancel 	{ background: url('../img/glyph.png') -216px -96px no-repeat; }
+
+.pager buttons btn.edit 		{ background: url('../img/glyph-white.png') 0px -72px no-repeat; }
+.pager buttons btn.del  		{ background: url('../img/glyph-white.png') -456px 0px no-repeat; }
+.pager buttons btn.del,
+.pager buttons btn.cancel	{ background: transparent; }
+.pager buttons btn.add			{ background: url('../img/glyph-white.png') -404px -96px no-repeat; }
+
+.pager.write	buttons btn.add,		
+.pager.write	buttons btn.edit 		{ background: url('../img/glyph-white.png') -288px 0px no-repeat; }
+.pager.write	buttons btn.del, 
+.pager.write	buttons btn.cancel 	{ background: url('../img/glyph-white.png') -216px -96px no-repeat; }
+
+/* .editButtons END */
+
+.kword_frame {
+	position:fixed;
+	min-width:500px;
+	min-height:600px;
+	width:98%;
+	height:90%;
+	overflow:hidden;
+}
